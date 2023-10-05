@@ -30,3 +30,18 @@ Enter an integer=>4
 Enter an integer=>2
 2,4,5 do not form a Pythagorean triple
 """
+a=int(input('Enter an integer=>'))
+b=int(input('Enter an integer=>'))
+c=int(input('Enter an integer=>'))
+xx=min(a,b,c)
+zz=max(a,b,c)
+if a!=xx and a!=zz:
+    yy=a
+elif b!=xx and b!=zz:
+    yy=b
+elif c!=xx and c!=zz:
+    yy=c
+if zz==(xx**2+yy**2)**0.5:
+    print(f'{xx},{yy},{zz} form a Pythagorean triple.')
+else:
+    print(f'{xx},{yy},{zz} do not form a Pythagorean triple.')
